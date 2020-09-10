@@ -34,6 +34,6 @@ class PurchaseResponse extends AbstractResponse implements RedirectResponseInter
      */
     protected function getViewFile()
     {
-        return 'purchase.php';
+        return 'purchase';
     }
 }

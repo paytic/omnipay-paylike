@@ -4,9 +4,11 @@ require 'init.php';
 
 $gateway = new \ByTIC\Omnipay\Paylike\Gateway();
 $parameters = [
-    'siteId' => $_ENV['PAYLIKE_PUBLIC_KEY'],
-    'siteId' => $_ENV['PAYLIKE_PRIVATE_KEY'],
+    'publicKey' => getenv('PAYLIKE_PUBLIC_KEY'),
+    'privateKey' => getenv('PAYLIKE_PRIVATE_KEY'),
     'orderId' => 99999,
+    'description' => 'My test transaction',
+    'returnUrl' => '?',
     'amount' => 20.00,
     'currency' => 'ron',
     'card' => [

@@ -25,16 +25,6 @@ class PurchaseRequest extends AbstractRequest
     }
 
     /**
-     * @inheritdoc
-     */
-    public function sendData($data)
-    {
-        $data['redirectUrl'] = $this->getSecureUrl();
-
-        return parent::sendData($data);
-    }
-
-    /**
      * @return array
      * @throws \Omnipay\Common\Exception\InvalidRequestException
      */
@@ -52,6 +42,7 @@ class PurchaseRequest extends AbstractRequest
             'amount' => $this->getAmount(),
             'currency' => $this->getCurrency(),
             'description' => $this->getDescription(),
+            'clientIp' => $this->getClientIp(),
         ];
 
         $card = $this->getCard();

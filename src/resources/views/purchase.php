@@ -123,25 +123,25 @@
     </style>
     <script src="https://sdk.paylike.io/3.js"></script>
     <script type="text/javascript">
-        var PAYLIKE_PUBLIC_KEY = "<?php echo $this->publicKey; ?>";
+        var PAYLIKE_PUBLIC_KEY = "<?php echo $this->get('publicKey'); ?>";
         var paylike = Paylike(PAYLIKE_PUBLIC_KEY);
 
         function pay() {
             paylike.popup(
                 {
                     title: "",
-                    description: "<?php echo $this->description; ?>",
-                    currency: "<?php echo $this->currency; ?>",
-                    amount: "<?php echo $this->amount; ?>",
-                    //locale 			: "<?php //echo $this->amount; ?>//",
+                    description: "<?php echo $this->get('description'); ?>",
+                    currency: "<?php echo $this->get('currency'); ?>",
+                    amount: "<?php echo $this->get('amount'); ?>",
+                    //locale 			: "<?php //echo $this->get('amount'); ?>//",
                     custom: {
-                        orderId: "<?php echo $this->orderId; ?>",
+                        orderId: "<?php echo $this->get('orderId'); ?>",
                         customer: {
-                            name: '<?php echo $this->firstName . ' ' . $this->lastName; ?>',
-                            email: '<?php echo $this->email; ?>',
-                            telephone: '<?php echo $this->phone; ?>',
-                            address: '<?php echo $this->address; ?>',
-                            //customerIp: '<?php //echo $ip; ?>//'
+                            name: '<?php echo $this->get('firstName') . ' ' . $this->get('lastName'); ?>',
+                            email: '<?php echo $this->get('email'); ?>',
+                            telephone: '<?php echo $this->get('phone'); ?>',
+                            address: '<?php echo $this->get('address'); ?>',
+                            customerIp: '<?php echo $this->get('clientIp'); ?>'
                         },
                         platform: {
                             name: 'bytic-omnipay',

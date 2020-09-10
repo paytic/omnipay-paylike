@@ -5,6 +5,7 @@ namespace ByTIC\Omnipay\Paylike;
 use ByTIC\Omnipay\Paylike\Message\CompletePurchaseRequest;
 use ByTIC\Omnipay\Paylike\Message\PurchaseRequest;
 use ByTIC\Omnipay\Paylike\Message\ServerCompletePurchaseRequest;
+use ByTIC\Omnipay\Paylike\Traits\HasKeysTrait;
 use Omnipay\Common\AbstractGateway;
 use Omnipay\Common\Message\RequestInterface;
 
@@ -20,17 +21,10 @@ use Omnipay\Common\Message\RequestInterface;
  */
 class Gateway extends AbstractGateway
 {
+    use HasKeysTrait;
+
     CONST VERSION = '1.0';
 
-    /**
-     * @var string
-     */
-    private $publicKey = '';
-
-    /**
-     * @var string
-     */
-    private $privateKey = '';
     /**
      * @var string
      */
@@ -75,26 +69,6 @@ class Gateway extends AbstractGateway
     // ------------ PARAMETERS ------------ //
 
     /**
-     *
-     * @return string
-     */
-    public function getPublicKey()
-    {
-        return $this->parameters->get('siteId', $this->publicKey);
-    }
-
-    /**
-     *
-     * @param string $value
-     *
-     * @return $this
-     */
-    public function setPublicKey($value)
-    {
-        return $this->setParameter('siteId', $value);
-    }
-
-    /**
      * @param  boolean $value
      * @return $this|AbstractGateway
      */
@@ -106,26 +80,6 @@ class Gateway extends AbstractGateway
     }
 
     // ------------ Getter'n'Setters ------------ //
-
-    /**
-     *
-     * @return string
-     */
-    public function getPrivateKey()
-    {
-        return $this->parameters->get('apiKey', $this->privateKey);
-    }
-
-    /**
-     *
-     * @param string $value
-     *
-     * @return $this
-     */
-    public function setPrivateKey($value)
-    {
-        return $this->setParameter('apiKey', $value);
-    }
 
     /**
      * Get live- or testURL.
