@@ -129,7 +129,7 @@
         function pay() {
             paylike.popup(
                 {
-                    title: "",
+                    title: "<?php echo $this->get('title'); ?>",
                     description: "<?php echo $this->get('description'); ?>",
                     currency: "<?php echo $this->get('currency'); ?>",
                     amount: "<?php echo $this->get('amount'); ?>",
@@ -163,9 +163,12 @@
                     console.log(res);
                     console.log('++++++++++++++++++++++++++++');
 
-                    var return_url = url_controller + qry_str + 'transactionid=' + res.transaction.id;
+                    var return_url = '<?php echo $this->get('returnUrl'); ?>'
+                        + '&orderId=' + '<?php echo $this->get('orderId'); ?>'
+                        + '&pTransactionId=' + res.transaction.id;
+                    console.log(return_url);
 
-                    // location.href = htmlDecode(return_url);
+                    location.href = return_url;
                 }
             );
         }

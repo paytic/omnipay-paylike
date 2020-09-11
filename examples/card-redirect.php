@@ -1,14 +1,15 @@
 <?php
 
-require 'init.php';
+require __DIR__ . '/init.php';
 
 $gateway = new \ByTIC\Omnipay\Paylike\Gateway();
 $parameters = [
     'publicKey' => getenv('PAYLIKE_PUBLIC_KEY'),
     'privateKey' => getenv('PAYLIKE_PRIVATE_KEY'),
     'orderId' => 99999,
+    'title' => 'My shop title',
     'description' => 'My test transaction',
-    'returnUrl' => '?',
+    'returnUrl' => 'card-return.php?id=99999',
     'amount' => 20.00,
     'currency' => 'ron',
     'card' => [

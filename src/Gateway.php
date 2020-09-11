@@ -43,6 +43,7 @@ class Gateway extends AbstractGateway
 
     /**
      * @inheritdoc
+     * @return PurchaseRequest
      */
     public function purchase(array $parameters = []): RequestInterface
     {
@@ -94,13 +95,14 @@ class Gateway extends AbstractGateway
 
     /**
      * @inheritdoc
+     * @return CompletePurchaseRequest
      */
     public function completePurchase(array $parameters = []): RequestInterface
     {
-//        return $this->createRequest(
-//            CompletePurchaseRequest::class,
-//            array_merge($this->getDefaultParameters(), $parameters)
-//        );
+        return $this->createRequest(
+            CompletePurchaseRequest::class,
+            array_merge($this->getDefaultParameters(), $parameters)
+        );
     }
 
     /**

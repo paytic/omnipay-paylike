@@ -18,6 +18,7 @@ class PurchaseResponse extends AbstractResponse implements RedirectResponseInter
     protected function initViewVars()
     {
         $data = $this->getData();
+        $data['returnUrl'] .= strpos($data['returnUrl'], '?') === false ? $data['returnUrl'] . '?' : '';
         $this->getView()->with($data);
     }
 

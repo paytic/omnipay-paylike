@@ -2,8 +2,6 @@
 
 namespace ByTIC\Omnipay\Paylike\Message;
 
-use ByTIC\Omnipay\Paylike\Helper;
-
 /**
  * Class PurchaseRequest
  * @package ByTIC\Omnipay\Paylike\Message
@@ -41,6 +39,7 @@ class PurchaseRequest extends AbstractRequest
             'orderId' => $this->getOrderId(),
             'amount' => $this->getAmount(),
             'currency' => $this->getCurrency(),
+            'title' => $this->getTitle(),
             'description' => $this->getDescription(),
             'clientIp' => $this->getClientIp(),
         ];
@@ -65,30 +64,6 @@ class PurchaseRequest extends AbstractRequest
     }
 
     /**
-     * @return mixed
-     */
-    public function getOrderType()
-    {
-        return $this->getParameter('orderType');
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getOrderId()
-    {
-        return $this->getParameter('orderId');
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getChecksum()
-    {
-        return $this->getParameter('checksum');
-    }
-
-    /**
      * @param $value
      * @return \Omnipay\Common\Message\AbstractRequest
      */
@@ -98,12 +73,11 @@ class PurchaseRequest extends AbstractRequest
     }
 
     /**
-     * @param $value
-     * @return \Omnipay\Common\Message\AbstractRequest
+     * @return mixed
      */
-    public function setOrderType($value)
+    public function getOrderId()
     {
-        return $this->setParameter('orderType', $value);
+        return $this->getParameter('orderId');
     }
 
     /**
@@ -116,11 +90,19 @@ class PurchaseRequest extends AbstractRequest
     }
 
     /**
+     * @return mixed
+     */
+    public function getTitle()
+    {
+        return $this->getParameter('title');
+    }
+
+    /**
      * @param $value
      * @return \Omnipay\Common\Message\AbstractRequest
      */
-    public function setChecksum($value)
+    public function setTitle($value)
     {
-        return $this->setParameter('checksum', $value);
+        return $this->setParameter('title', $value);
     }
 }
