@@ -29,7 +29,7 @@ class Gateway extends AbstractGateway
 {
     use HasKeysTrait;
 
-    CONST VERSION = '1.0';
+    const VERSION = '1.0';
 
     /**
      * @var string

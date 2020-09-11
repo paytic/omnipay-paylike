@@ -39,5 +39,4 @@ trait HasApiTrait
     {
         return new \Paylike\Paylike($this->getPrivateKey());
     }
-
 }
