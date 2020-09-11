@@ -29,7 +29,13 @@ class PurchaseRequest extends AbstractRequest
     public function getData()
     {
         $this->validate(
-            'publicKey', 'amount', 'currency', 'description', 'orderId',  'returnUrl', 'card'
+            'publicKey',
+            'amount',
+            'currency',
+            'description',
+            'orderId',
+            'returnUrl',
+            'card'
         );
 
         $data = [

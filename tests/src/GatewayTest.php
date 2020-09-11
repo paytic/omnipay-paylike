@@ -2,7 +2,6 @@
 
 namespace ByTIC\Omnipay\Paylike\Tests;
 
-
 use ByTIC\Omnipay\Paylike\Gateway;
 use ByTIC\Omnipay\Paylike\Message\PurchaseRequest;
 
