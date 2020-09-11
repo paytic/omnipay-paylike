@@ -26,7 +26,8 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "ByTIC\\Omnipay\\Paylike\\Tests\\": "tests/"
+      "ByTIC\\Omnipay\\Paylike\\Tests\\Fixtures\\": "tests/fixtures",
+      "ByTIC\\Omnipay\\Paylike\\Tests\\": "tests/src"
     }
   },
   "require": {

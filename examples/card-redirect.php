@@ -10,7 +10,7 @@ $parameters = [
     'title' => 'My shop title',
     'description' => 'My test transaction',
     'returnUrl' => 'card-return.php?id=99999',
-    'amount' => 20.00,
+    'amount' => 123.34,
     'currency' => 'ron',
     'card' => [
         'first_name' => 'John',

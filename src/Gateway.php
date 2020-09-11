@@ -2,22 +2,28 @@
 
 namespace ByTIC\Omnipay\Paylike;
 
+use ByTIC\Omnipay\Paylike\Message\CaptureRequest;
 use ByTIC\Omnipay\Paylike\Message\CompletePurchaseRequest;
 use ByTIC\Omnipay\Paylike\Message\PurchaseRequest;
-use ByTIC\Omnipay\Paylike\Message\ServerCompletePurchaseRequest;
+//use ByTIC\Omnipay\Paylike\Message\ServerCompletePurchaseRequest;
 use ByTIC\Omnipay\Paylike\Traits\HasKeysTrait;
 use Omnipay\Common\AbstractGateway;
+use Omnipay\Common\Message\NotificationInterface;
 use Omnipay\Common\Message\RequestInterface;
 
 /**
+ * Class Gateway
+ * @package ByTIC\Omnipay\Paylike
+ *
  * @method RequestInterface authorize(array $options = [])
  * @method RequestInterface completeAuthorize(array $options = [])
- * @method RequestInterface capture(array $options = [])
  * @method RequestInterface refund(array $options = [])
  * @method RequestInterface void(array $options = [])
  * @method RequestInterface createCard(array $options = [])
  * @method RequestInterface updateCard(array $options = [])
  * @method RequestInterface deleteCard(array $options = [])
+ * @method RequestInterface fetchTransaction(array $options = [])
+ * @method NotificationInterface acceptNotification(array $options = array())
  */
 class Gateway extends AbstractGateway
 {
@@ -101,6 +107,18 @@ class Gateway extends AbstractGateway
     {
         return $this->createRequest(
             CompletePurchaseRequest::class,
+            array_merge($this->getDefaultParameters(), $parameters)
+        );
+    }
+
+    /**
+     * @inheritdoc
+     * @return CaptureRequest
+     */
+    public function capture(array $parameters = []): RequestInterface
+    {
+        return $this->createRequest(
+            CaptureRequest::class,
             array_merge($this->getDefaultParameters(), $parameters)
         );
     }

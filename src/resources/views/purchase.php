@@ -132,7 +132,7 @@
                     title: "<?php echo $this->get('title'); ?>",
                     description: "<?php echo $this->get('description'); ?>",
                     currency: "<?php echo $this->get('currency'); ?>",
-                    amount: "<?php echo $this->get('amount'); ?>",
+                    amount: "<?php echo $this->get('amount') * 100; ?>",
                     //locale 			: "<?php //echo $this->get('amount'); ?>//",
                     custom: {
                         orderId: "<?php echo $this->get('orderId'); ?>",
