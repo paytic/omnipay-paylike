@@ -2,15 +2,15 @@
 
 namespace ByTIC\Omnipay\Paylike\Tests\Message;
 
-use ByTIC\Omnipay\Mobilpay\Message\AbstractRequest;
-use ByTIC\Omnipay\Mobilpay\Tests\AbstractTest;
+use ByTIC\Omnipay\Paylike\Message\AbstractRequest;
+use ByTIC\Omnipay\Paylike\Tests\AbstractTest;
 use Guzzle\Http\Client as HttpClient;
 use Omnipay\Common\Message\AbstractResponse;
 use Symfony\Component\HttpFoundation\Request as HttpRequest;
 
 /**
  * Class AbstractResponseTest
- * @package ByTIC\Omnipay\Mobilpay\Tests\Message
+ * @package ByTIC\Omnipay\Paylike\Tests\Message
  */
 abstract class AbstractResponseTest extends AbstractTest
 {

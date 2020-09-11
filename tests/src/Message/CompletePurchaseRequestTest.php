@@ -9,7 +9,7 @@ use Omnipay\Common\Http\Client;
 
 /**
  * Class CompletePurchaseRequestTest
- * @package ByTIC\Omnipay\Mobilpay\Tests\Message
+ * @package ByTIC\Omnipay\Paylike\Tests\Message
  */
 class CompletePurchaseRequestTest extends AbstractRequestTest
 {
@@ -29,6 +29,10 @@ class CompletePurchaseRequestTest extends AbstractRequestTest
         $response = $request->send();
         self::assertInstanceOf(CompletePurchaseResponse::class, $response);
         self::assertTrue($response->isSuccessful());
-        self::assertSame($httpRequest->query->get('orderId'), $response->getData());
+
+        $data = $response->getData();
+        self::assertIsArray($data);
+        self::assertTrue($data['success']);
+        self::assertArrayHasKey('transaction', $data);
     }
 }
