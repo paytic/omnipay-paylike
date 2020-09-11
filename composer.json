@@ -32,7 +32,7 @@
   },
   "require": {
     "php": "^7.0",
-    "bytic/omnipay-common": "^3.0",
+    "bytic/omnipay-common": "^2.0",
     "paylike/php-api": "^1.0"
   },
   "require-dev": {
