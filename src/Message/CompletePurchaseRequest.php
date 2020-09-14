@@ -8,6 +8,8 @@ use ByTIC\Omnipay\Paylike\Traits\HasApiTrait;
 /**
  * Class CompletePurchaseRequest
  * @package ByTIC\Omnipay\Paylike\Message
+ *
+ * @method CompletePurchaseResponse send()
  */
 class CompletePurchaseRequest extends AbstractRequest
 {
@@ -17,11 +19,14 @@ class CompletePurchaseRequest extends AbstractRequest
     /**
      * @return mixed
      */
-    protected function isValidNotification()
+    public function isValidNotification()
     {
+        if (!$this->hasGet('pTransactionId')) {
+            return false;
+        }
         $this->validate('privateKey');
 
-        return $this->hasGet('pTransactionId') && $this->isValidTransaction();
+        return $this->isValidTransaction();
     }
 
     /**
