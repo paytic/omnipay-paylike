@@ -20,7 +20,7 @@
     </include>
 
     <exclude>
-      <directory>./src/Resources</directory>
+      <directory>./src/resources/</directory>
     </exclude>
   </coverage>
 

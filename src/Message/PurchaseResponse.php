@@ -4,7 +4,6 @@ namespace ByTIC\Omnipay\Paylike\Message;
 
 use ByTIC\Omnipay\Common\Message\Traits\HasViewTrait;
 use ByTIC\Omnipay\Paylike\Helper;
-use Omnipay\Common\Message\RedirectResponseInterface;
 
 /**
  * Class PurchaseResponse
