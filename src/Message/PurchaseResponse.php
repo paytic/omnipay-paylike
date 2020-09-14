@@ -10,10 +10,9 @@ use Omnipay\Common\Message\RedirectResponseInterface;
  * Class PurchaseResponse
  * @package ByTIC\Omnipay\Paylike\Message
  */
-class PurchaseResponse extends AbstractResponse implements RedirectResponseInterface
+class PurchaseResponse extends AbstractResponse
 {
     use HasViewTrait;
-
 
     protected function initViewVars()
     {
