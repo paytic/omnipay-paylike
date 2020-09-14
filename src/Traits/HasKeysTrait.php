@@ -10,7 +10,6 @@ use Omnipay\Common\Message\AbstractRequest as CommonAbstractRequest;
  */
 trait HasKeysTrait
 {
-
     /**
      * @return mixed
      */

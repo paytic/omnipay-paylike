@@ -10,14 +10,13 @@ namespace ByTIC\Omnipay\Paylike\Message;
  */
 class PurchaseRequest extends AbstractRequest
 {
-
     /**
      * @inheritdoc
      */
     public function initialize(array $parameters = [])
     {
         $parameters['identifier'] = isset($parameters['identifier']) ?
-            $parameters['identifier'] : 'anonymous'.microtime(true);
+            $parameters['identifier'] : 'anonymous' . microtime(true);
 
         return parent::initialize($parameters);
     }
