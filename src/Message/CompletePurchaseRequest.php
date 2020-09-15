@@ -21,12 +21,7 @@ class CompletePurchaseRequest extends AbstractRequest
      */
     public function isValidNotification()
     {
-        if (!$this->hasGet('pTransactionId')) {
-            return false;
-        }
-        $this->validate('privateKey');
-
-        return $this->isValidTransaction();
+        return $this->hasGET('pTransactionId');
     }
 
     /**
@@ -34,6 +29,12 @@ class CompletePurchaseRequest extends AbstractRequest
      */
     protected function parseNotification()
     {
+        $this->validate('privateKey');
+
+        if ($this->isValidTransaction()) {
+            return false;
+        }
+
         $transaction = $this->getDataItem('transaction');
 
         if ($transaction['pendingAmount'] > 0) {
