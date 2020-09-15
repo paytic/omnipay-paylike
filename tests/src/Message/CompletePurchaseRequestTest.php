@@ -5,7 +5,6 @@ namespace ByTIC\Omnipay\Paylike\Tests\Message;
 use ByTIC\Omnipay\Paylike\Message\CompletePurchaseRequest;
 use ByTIC\Omnipay\Paylike\Message\CompletePurchaseResponse;
 use ByTIC\Omnipay\Paylike\Tests\Fixtures\HttpRequestBuilder;
-use Guzzle\Http\Client;
 
 /**
  * Class CompletePurchaseRequestTest
@@ -15,7 +14,7 @@ class CompletePurchaseRequestTest extends AbstractRequestTest
 {
     public function testSimpleSend()
     {
-        $client = new Client();
+        $client = $this->getHttpClient();
         $httpRequest = HttpRequestBuilder::createCompletePurchase();
         $request = new CompletePurchaseRequest($client, $httpRequest);
         $request->initialize(
