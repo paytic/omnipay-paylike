@@ -164,7 +164,7 @@
                     console.log('++++++++++++++++++++++++++++');
 
                     var return_url = '<?php echo $this->get('returnUrl'); ?>'
-                        + '&orderId=' + '<?php echo $this->get('orderId'); ?>'
+                        + '&pOrderId=' + '<?php echo $this->get('orderId'); ?>'
                         + '&pTransactionId=' + res.transaction.id;
                     console.log(return_url);
 
