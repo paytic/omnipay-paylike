@@ -16,7 +16,6 @@ use Symfony\Component\HttpFoundation\Request as HttpRequest;
  */
 abstract class AbstractRequestTest extends AbstractTest
 {
-
     /** @var ClientInterface */
     private $httpClient;
 
