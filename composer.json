@@ -33,7 +33,8 @@
   "require": {
     "php": "^7.0",
     "bytic/omnipay-common": "^2.0",
-    "paylike/php-api": "^1.0"
+    "paylike/php-api": "^1.0",
+    "ext-json": "*"
   },
   "require-dev": {
     "phpunit/phpunit": "^8.0|^9.0",
