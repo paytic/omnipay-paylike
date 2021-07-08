@@ -31,7 +31,7 @@ class CompletePurchaseRequest extends AbstractRequest
     {
         $this->validate('privateKey');
 
-        if ($this->isValidTransaction()) {
+        if ($this->isValidTransaction() == false) {
             return false;
         }
 

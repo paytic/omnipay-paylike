@@ -5,11 +5,12 @@ namespace ByTIC\Omnipay\Paylike;
 use ByTIC\Omnipay\Paylike\Message\CaptureRequest;
 use ByTIC\Omnipay\Paylike\Message\CompletePurchaseRequest;
 use ByTIC\Omnipay\Paylike\Message\PurchaseRequest;
-//use ByTIC\Omnipay\Paylike\Message\ServerCompletePurchaseRequest;
 use ByTIC\Omnipay\Paylike\Traits\HasKeysTrait;
 use Omnipay\Common\AbstractGateway;
 use Omnipay\Common\Message\NotificationInterface;
 use Omnipay\Common\Message\RequestInterface;
+
+//use ByTIC\Omnipay\Paylike\Message\ServerCompletePurchaseRequest;
 
 /**
  * Class Gateway
