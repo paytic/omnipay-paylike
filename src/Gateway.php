@@ -1,20 +1,20 @@
 <?php
 
-namespace ByTIC\Omnipay\Paylike;
+namespace Paytic\Omnipay\Paylike;
 
-use ByTIC\Omnipay\Paylike\Message\CaptureRequest;
-use ByTIC\Omnipay\Paylike\Message\CompletePurchaseRequest;
-use ByTIC\Omnipay\Paylike\Message\PurchaseRequest;
-use ByTIC\Omnipay\Paylike\Traits\HasKeysTrait;
+use Paytic\Omnipay\Paylike\Message\CaptureRequest;
+use Paytic\Omnipay\Paylike\Message\CompletePurchaseRequest;
+use Paytic\Omnipay\Paylike\Message\PurchaseRequest;
+use Paytic\Omnipay\Paylike\Traits\HasKeysTrait;
 use Omnipay\Common\AbstractGateway;
 use Omnipay\Common\Message\NotificationInterface;
 use Omnipay\Common\Message\RequestInterface;
 
-//use ByTIC\Omnipay\Paylike\Message\ServerCompletePurchaseRequest;
+//use Paytic\Omnipay\Paylike\Message\ServerCompletePurchaseRequest;
 
 /**
  * Class Gateway
- * @package ByTIC\Omnipay\Paylike
+ * @package Paytic\Omnipay\Paylike
  *
  * @method RequestInterface authorize(array $options = [])
  * @method RequestInterface completeAuthorize(array $options = [])

@@ -1,13 +1,13 @@
 <?php
 
-namespace ByTIC\Omnipay\Paylike\Message;
+namespace Paytic\Omnipay\Paylike\Message;
 
-use ByTIC\Omnipay\Paylike\Helper;
-use ByTIC\Omnipay\Paylike\Traits\HasApiTrait;
+use Paytic\Omnipay\Paylike\Helper;
+use Paytic\Omnipay\Paylike\Traits\HasApiTrait;
 
 /**
  * Class CaptureRequest
- * @package ByTIC\Omnipay\Paylike\Message
+ * @package Paytic\Omnipay\Paylike\Message
  *
  * @method CaptureResponse send
  */

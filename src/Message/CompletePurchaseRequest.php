@@ -1,13 +1,13 @@
 <?php
 
-namespace ByTIC\Omnipay\Paylike\Message;
+namespace Paytic\Omnipay\Paylike\Message;
 
-use ByTIC\Omnipay\Common\Message\Traits\GatewayNotificationRequestTrait;
-use ByTIC\Omnipay\Paylike\Traits\HasApiTrait;
+use Paytic\Omnipay\Common\Message\Traits\GatewayNotificationRequestTrait;
+use Paytic\Omnipay\Paylike\Traits\HasApiTrait;
 
 /**
  * Class CompletePurchaseRequest
- * @package ByTIC\Omnipay\Paylike\Message
+ * @package Paytic\Omnipay\Paylike\Message
  *
  * @method CompletePurchaseResponse send()
  */

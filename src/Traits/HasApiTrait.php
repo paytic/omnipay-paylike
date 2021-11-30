@@ -1,10 +1,10 @@
 <?php
 
-namespace ByTIC\Omnipay\Paylike\Traits;
+namespace Paytic\Omnipay\Paylike\Traits;
 
 /**
  * Trait HasApiTrait
- * @package ByTIC\Omnipay\Paylike\Traits
+ * @package Paytic\Omnipay\Paylike\Traits
  *
  * @method string getPrivateKey
  */

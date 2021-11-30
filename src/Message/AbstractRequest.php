@@ -1,14 +1,14 @@
 <?php
 
-namespace ByTIC\Omnipay\Paylike\Message;
+namespace Paytic\Omnipay\Paylike\Message;
 
-use ByTIC\Omnipay\Common\Message\Traits\SendDataRequestTrait;
-use ByTIC\Omnipay\Paylike\Traits\HasKeysTrait;
+use Paytic\Omnipay\Common\Message\Traits\SendDataRequestTrait;
+use Paytic\Omnipay\Paylike\Traits\HasKeysTrait;
 use Omnipay\Common\Message\AbstractRequest as CommonAbstractRequest;
 
 /**
  * Class AbstractRequest
- * @package ByTIC\Omnipay\Paylike\Message
+ * @package Paytic\Omnipay\Paylike\Message
  */
 abstract class AbstractRequest extends CommonAbstractRequest
 {

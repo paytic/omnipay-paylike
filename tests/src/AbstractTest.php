@@ -1,6 +1,6 @@
 <?php
 
-namespace ByTIC\Omnipay\Paylike\Tests;
+namespace Paytic\Omnipay\Paylike\Tests;
 
 use PHPUnit\Framework\TestCase;
 

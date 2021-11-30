@@ -1,5 +1,5 @@
 {
-  "name": "bytic/omnipay-paylike",
+  "name": "paytic/omnipay-paylike",
   "type": "library",
   "license": "MIT",
   "description": "Paylike driver for ThePhpLeague Omnipay multi-payment processing library",
@@ -12,7 +12,7 @@
     "pay",
     "payment"
   ],
-  "homepage": "https://github.com/ByTIC/omnipay-paylike",
+  "homepage": "https://github.com/paytic/omnipay-paylike",
   "authors": [
     {
       "name": "Gabriel Solomon",
@@ -21,23 +21,23 @@
   ],
   "autoload": {
     "psr-4": {
-      "ByTIC\\Omnipay\\Paylike\\": "src/"
+      "Paytic\\Omnipay\\Paylike\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "ByTIC\\Omnipay\\Paylike\\Tests\\Fixtures\\": "tests/fixtures",
-      "ByTIC\\Omnipay\\Paylike\\Tests\\": "tests/src"
+      "Paytic\\Omnipay\\Paylike\\Tests\\Fixtures\\": "tests/fixtures",
+      "Paytic\\Omnipay\\Paylike\\Tests\\": "tests/src"
     }
   },
   "require": {
     "php": "^7.0|^8.0",
     "ext-json": "*",
-    "bytic/omnipay-common": "^3.0",
-    "paylike/php-api": "^1.0",
+    "paytic/omnipay-common": "^3.0",
+    "paylike/php-api": "^1.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^8.0|^9.0",
+    "omnipay/tests": "^3|^4",
     "mockery/mockery": "^1.0",
     "vlucas/phpdotenv": "^4.0",
     "php-http/mock-client": "^1.1",

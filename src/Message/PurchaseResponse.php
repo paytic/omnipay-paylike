@@ -1,13 +1,13 @@
 <?php
 
-namespace ByTIC\Omnipay\Paylike\Message;
+namespace Paytic\Omnipay\Paylike\Message;
 
-use ByTIC\Omnipay\Common\Message\Traits\HasViewTrait;
-use ByTIC\Omnipay\Paylike\Helper;
+use Paytic\Omnipay\Common\Message\Traits\HasViewTrait;
+use Paytic\Omnipay\Paylike\Helper;
 
 /**
  * Class PurchaseResponse
- * @package ByTIC\Omnipay\Paylike\Message
+ * @package Paytic\Omnipay\Paylike\Message
  */
 class PurchaseResponse extends AbstractResponse
 {

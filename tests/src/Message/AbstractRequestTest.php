@@ -1,10 +1,10 @@
 <?php
 
-namespace ByTIC\Omnipay\Paylike\Tests\Message;
+namespace Paytic\Omnipay\Paylike\Tests\Message;
 
-//use ByTIC\Omnipay\Paylike\Tests\Traits\HasTestUtilMethods;
-use ByTIC\Omnipay\Paylike\Message\AbstractRequest;
-use ByTIC\Omnipay\Paylike\Tests\AbstractTest;
+//use Paytic\Omnipay\Paylike\Tests\Traits\HasTestUtilMethods;
+use Paytic\Omnipay\Paylike\Message\AbstractRequest;
+use Paytic\Omnipay\Paylike\Tests\AbstractTest;
 use Http\Mock\Client as MockClient;
 use Omnipay\Common\Http\Client;
 use Omnipay\Common\Http\ClientInterface;
@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Request as HttpRequest;
 
 /**
  * Class AbstractRequestTest
- * @package ByTIC\Omnipay\Paylike\Tests\Message
+ * @package Paytic\Omnipay\Paylike\Tests\Message
  */
 abstract class AbstractRequestTest extends AbstractTest
 {

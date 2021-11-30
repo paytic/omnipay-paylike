@@ -1,13 +1,13 @@
 <?php
 
-namespace ByTIC\Omnipay\Paylike\Message;
+namespace Paytic\Omnipay\Paylike\Message;
 
-use ByTIC\Omnipay\Common\Message\Traits\GatewayNotificationResponseTrait;
-use ByTIC\Omnipay\Common\Message\Traits\HtmlResponses\ConfirmHtmlTrait;
+use Paytic\Omnipay\Common\Message\Traits\GatewayNotificationResponseTrait;
+use Paytic\Omnipay\Common\Message\Traits\HtmlResponses\ConfirmHtmlTrait;
 
 /**
  * Class CompletePurchaseResponse
- * @package ByTIC\Omnipay\Paylike\Message
+ * @package Paytic\Omnipay\Paylike\Message
  */
 class CompletePurchaseResponse extends AbstractResponse
 {

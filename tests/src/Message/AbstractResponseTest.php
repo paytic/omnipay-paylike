@@ -1,16 +1,16 @@
 <?php
 
-namespace ByTIC\Omnipay\Paylike\Tests\Message;
+namespace Paytic\Omnipay\Paylike\Tests\Message;
 
-use ByTIC\Omnipay\Paylike\Message\AbstractRequest;
-use ByTIC\Omnipay\Paylike\Tests\AbstractTest;
+use Paytic\Omnipay\Paylike\Message\AbstractRequest;
+use Paytic\Omnipay\Paylike\Tests\AbstractTest;
 use Guzzle\Http\Client as HttpClient;
 use Omnipay\Common\Message\AbstractResponse;
 use Symfony\Component\HttpFoundation\Request as HttpRequest;
 
 /**
  * Class AbstractResponseTest
- * @package ByTIC\Omnipay\Paylike\Tests\Message
+ * @package Paytic\Omnipay\Paylike\Tests\Message
  */
 abstract class AbstractResponseTest extends AbstractTest
 {

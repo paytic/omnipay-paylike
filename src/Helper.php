@@ -1,10 +1,10 @@
 <?php
 
-namespace ByTIC\Omnipay\Paylike;
+namespace Paytic\Omnipay\Paylike;
 
 /**
  * Class Helper
- * @package ByTIC\Omnipay\Paylike
+ * @package Paytic\Omnipay\Paylike
  */
 class Helper
 {

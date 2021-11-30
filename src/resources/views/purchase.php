@@ -145,7 +145,7 @@
                         },
                         platform: {
                             name: 'bytic-omnipay',
-                            version: '<?php echo \ByTIC\Omnipay\Paylike\Gateway::VERSION; ?>',
+                            version: '<?php echo \Paytic\Omnipay\Paylike\Gateway::VERSION; ?>',
                         },
                     },
                 },

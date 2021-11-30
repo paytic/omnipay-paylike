@@ -1,14 +1,14 @@
 <?php
 
-namespace ByTIC\Omnipay\Paylike\Tests\Message;
+namespace Paytic\Omnipay\Paylike\Tests\Message;
 
-use ByTIC\Omnipay\Paylike\Message\CompletePurchaseRequest;
-use ByTIC\Omnipay\Paylike\Message\CompletePurchaseResponse;
-use ByTIC\Omnipay\Paylike\Tests\Fixtures\HttpRequestBuilder;
+use Paytic\Omnipay\Paylike\Message\CompletePurchaseRequest;
+use Paytic\Omnipay\Paylike\Message\CompletePurchaseResponse;
+use Paytic\Omnipay\Paylike\Tests\Fixtures\HttpRequestBuilder;
 
 /**
  * Class CompletePurchaseRequestTest
- * @package ByTIC\Omnipay\Paylike\Tests\Message
+ * @package Paytic\Omnipay\Paylike\Tests\Message
  */
 class CompletePurchaseRequestTest extends AbstractRequestTest
 {

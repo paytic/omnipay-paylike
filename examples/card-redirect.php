@@ -2,7 +2,7 @@
 
 require __DIR__ . '/init.php';
 
-$gateway = new \ByTIC\Omnipay\Paylike\Gateway();
+$gateway = new \Paytic\Omnipay\Paylike\Gateway();
 $parameters = [
     'publicKey' => getenv('PAYLIKE_PUBLIC_KEY'),
     'privateKey' => getenv('PAYLIKE_PRIVATE_KEY'),

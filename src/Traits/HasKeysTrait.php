@@ -1,12 +1,12 @@
 <?php
 
-namespace ByTIC\Omnipay\Paylike\Traits;
+namespace Paytic\Omnipay\Paylike\Traits;
 
 use Omnipay\Common\Message\AbstractRequest as CommonAbstractRequest;
 
 /**
  * Trait HasKeysTrait
- * @package ByTIC\Omnipay\Paylike\Traits
+ * @package Paytic\Omnipay\Paylike\Traits
  */
 trait HasKeysTrait
 {
