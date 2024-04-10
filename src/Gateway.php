@@ -6,7 +6,7 @@ use Paytic\Omnipay\Paylike\Message\CaptureRequest;
 use Paytic\Omnipay\Paylike\Message\CompletePurchaseRequest;
 use Paytic\Omnipay\Paylike\Message\PurchaseRequest;
 use Paytic\Omnipay\Paylike\Traits\HasKeysTrait;
-use Omnipay\Common\AbstractGateway;
+use Paytic\Omnipay\Common\Gateway\AbstractGateway;
 use Omnipay\Common\Message\NotificationInterface;
 use Omnipay\Common\Message\RequestInterface;
 
